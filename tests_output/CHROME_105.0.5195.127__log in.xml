@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="log in"
+    errors="1" failures="0" hostname="" id="" package="log in" skipped="0"
+    tests="1" time="0.01800" timestamp="">
+  
+    <testcase name="Log in test" classname="log in" time="0.01800" assertions="0">
+    <error message="document is not defined" type="error"><![CDATA[
+    ReferenceError: document is not defined
+    at Log in test (C:\Users\evgen\nightwatchauto\tests\log in.js:14:17)
+    at Context.call (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\context.js:433:35)
+    at TestCase.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:80)
+    at Runnable.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.createRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:801:33)
+    at TestSuite.handleRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:806:33)
+    at C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DefaultRunner.runTestSuite (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\runner\test-runners\default.js:76:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       → ReferenceError
+
+    document is not defined
+
+    Error location:
+C:\Users\evgen\nightwatchauto\tests\log in.js:
+–––––––––––––––––––––––––––––––––––––––––––––––
+ 12 |     //browser.mouse();
+ 13 | 
+ 14 |     var links = document.getElementsByTagName(&#34;a&#34;); 
+ 15 |     for (var i in links) {
+ 16 |       var link = links[i];
+–––––––––––––––––––––––––––––––––––––––––––––––
+
+    Stack Trace :
+at Log in test (C:\Users\evgen\nightwatchauto\tests\log in.js:14:17)
+at Context.call (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\context.js:433:35)
+at TestCase.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+at Runnable.__runFn (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:80)
+at Runnable.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+at TestSuite.createRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:801:33)
+at TestSuite.handleRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:806:33)
+at C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:21
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+at async DefaultRunner.runTestSuite (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\runner\test-runners\default.js:76:7)
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

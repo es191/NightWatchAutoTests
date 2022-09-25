@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="multipurposeParser"
+    errors="1" failures="0" hostname="" id="" package="multipurposeParser" skipped="0"
+    tests="1" time="0.01000" timestamp="">
+  
+    <testcase name="Parser JS + Nightwatch" classname="multipurposeParser" time="0.01000" assertions="0">
+    <error message="window is not defined" type="error"><![CDATA[
+    ReferenceError: window is not defined
+    at Parser JS + Nightwatch (C:\Users\evgen\nightwatchauto\tests\multipurposeParser.js:4:5)
+    at Context.call (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\context.js:433:35)
+    at TestCase.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:80)
+    at Runnable.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.createRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:801:33)
+    at TestSuite.handleRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:806:33)
+    at C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async DefaultRunner.runTestSuite (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\runner\test-runners\default.js:76:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       → ReferenceError
+
+    window is not defined
+
+    Error location:
+C:\Users\evgen\nightwatchauto\tests\multipurposeParser.js:
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+ 2 |   &#34;Parser JS + Nightwatch&#34;: function (browser) {
+ 3 |     browser.url(&#34;https://gymbeam.cz/proteiny&#34;);
+ 4 |     window.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; { 
+ 5 |       const body = document.querySelector(&#34;body&#34;);
+ 6 |       let textNodes = [];
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    Stack Trace :
+at Parser JS + Nightwatch (C:\Users\evgen\nightwatchauto\tests\multipurposeParser.js:4:5)
+at Context.call (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\context.js:433:35)
+at TestCase.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+at Runnable.__runFn (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:80)
+at Runnable.run (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+at TestSuite.createRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:801:33)
+at TestSuite.handleRunnable (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:806:33)
+at C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\testsuite\index.js:694:21
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+at async DefaultRunner.runTestSuite (C:\Users\evgen\nightwatchauto\node_modules\nightwatch\lib\runner\test-runners\default.js:76:7)
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
